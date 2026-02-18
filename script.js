@@ -10,5 +10,9 @@ window.addEventListener("scroll", () => {
             card.style.opacity = "1";
             card.style.transform = "translateY(0)";
         }
+        function toggleMenu() {
+  document.getElementById("nav-menu").classList.toggle("show");
+}
+
     });
 });

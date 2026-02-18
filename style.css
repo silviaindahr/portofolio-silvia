@@ -46,19 +46,57 @@ nav a:hover {
     color: #a78bfa;
 }
 
+/* ===== NAVBAR MOBILE ===== */
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 12px 16px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #020617;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+}
+
+
 /* ================= HERO ================= */
 .hero {
-    position: relative;
-    width: 100%;
-    min-height: unset;
-    padding: 120px 80px;
+  position: relative;
+  width: 100%;
+  min-height: 90vh; /* laptop auto, tidak maksa */
+  padding: 140px 80px;
 
-    background:
+  background:
     radial-gradient(circle at 35% 55%, rgba(0,0,0,0.25), rgba(2,6,23,0.85)),
     url("bg.jpeg");
 
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero::before {
@@ -266,19 +304,7 @@ h2 {
 
   .hero {
     min-height: auto;
-    padding: 90px 16px 50px;
-  }
-
-  section {
-    min-height: auto;
-    padding: 50px 16px;
-  }
-
-}
-
-  .hero {
-    padding: 100px 16px 60px;
-    min-height: auto;
+    padding: 100px 16px 70px; /* background turun dikit */
   }
 
   .hero-content {
@@ -288,21 +314,17 @@ h2 {
     gap: 20px;
   }
 
- .hero-text h1 {
-  margin-top: 10px;
-}
-
-.btn {
-  margin-top: 14px;
-}
+  .hero-text {
+    align-items: center;
+  }
 
   .profile {
     margin: 0 auto;
   }
 
   section {
-    padding: 60px 16px;
     min-height: auto;
+    padding: 50px 16px;
   }
 
   .project-images {
@@ -311,8 +333,9 @@ h2 {
 
   .project-images img {
     width: 100%;
-    max-width: 100%;
   }
+
+}
 
   /* FONT */
   h1 { font-size: 22px; }
