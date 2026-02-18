@@ -262,27 +262,55 @@ h2 {
     to { transform: translateY(40px); }
 }
 
-/* ===== MODE HP ===== */
+/* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 768px) {
 
-  body {
-    padding: 10px;
-  }
+    body {
+        padding: 10px;
+    }
 
-  .container {
-    width: 100%;
-  }
+    /* navbar jadi kebawah */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+    /* profile jadi vertikal */
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  h1 {
-    font-size: 24px;
-  }
+    .profile img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
 
-  p {
-    font-size: 14px;
-  }
+    /* tulisan mengecil */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* card project full width */
+    .project-card {
+        width: 100%;
+    }
+
+    /* container ga melebar keluar layar */
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
 }
