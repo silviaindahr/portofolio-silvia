@@ -262,31 +262,27 @@ h2 {
     to { transform: translateY(40px); }
 }
 
-/* ================= MOBILE ================= */
+/* ===== MODE HP ===== */
 @media (max-width: 768px) {
-    nav {
-        padding: 15px 20px;
-    }
 
-    .hero {
-        padding: 120px 20px;
-    }
+  body {
+    padding: 10px;
+  }
 
-    .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
+  .container {
+    width: 100%;
+  }
 
-    .hero-text {
-        align-items: center;
-    }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-    .profile {
-        width: 110px;
-        height: 110px;
-    }
+  h1 {
+    font-size: 24px;
+  }
 
-    .hero h1 {
-        font-size: 24px;
-    }
+  p {
+    font-size: 14px;
+  }
 }
