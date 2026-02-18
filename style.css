@@ -88,8 +88,8 @@ nav a:hover {
 .hero {
   position: relative;
   width: 100%;
-  min-height: 90vh; /* laptop auto, tidak maksa */
-  padding: 140px 80px;
+  min-height: 90vh; /* PAS di laptop, tidak maksa */
+  padding: 160px 120px;
 
   background:
     radial-gradient(circle at 35% 55%, rgba(0,0,0,0.25), rgba(2,6,23,0.85)),
@@ -98,6 +98,7 @@ nav a:hover {
   background-size: cover;
   background-position: center;
 }
+
 
 .hero::before {
     content: "";
@@ -108,8 +109,13 @@ nav a:hover {
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 60px;
+  align-items: center;
 }
 
 /* background aesthetic */
@@ -203,12 +209,12 @@ nav a:hover {
 
 /* ================= SECTION ================= */
 section {
-    padding: 80px 80px;
-    max-width: 1000px;
-    margin: auto;
-    scroll-margin-top: 80px;
-    min-height: 100vh;
+  padding: 100px 120px;
+  max-width: 1200px;
+  margin: auto;
+  scroll-margin-top: 80px;
 }
+
 
 h2 {
     font-weight: 600;
@@ -290,9 +296,10 @@ h2 {
 }
 
 .project-images img {
-    width: 400px;
-    border-radius: 10px;
+  width: 480px;
+  border-radius: 12px;
 }
+
 
 /* ================= ANIMATION ================= */
 @keyframes float {
